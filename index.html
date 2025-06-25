@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Challenge 1</title>
+    <title>4th of July Celebration</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 </head>
 <body>
-    
+    <audio id="bgm" autoplay loop muted>
+        <source src="Music.mp3" type="audio/mpeg">
+    </audio>
+    <div class="music-controls">
+        <button onclick="playMusic()">--------</button>
+    </div>
+    <!-- Sky and Background -->
+    <div class="sky">
+        <div class="stars"></div>
+        <div class="moon">
+            <img src="img/moon.png" alt="Moon">
+        </div>
+    </div>
+
+    <!-- Fireworks -->
+    <div class="fireworks-container">
+        <img src="img/fireworks.png" alt="Firework 1" class="firework1">
+        <img src="img/fireworks.png" alt="Firework 2" class="firework2">
+        <img src="img/fireworks.png" alt="Firework 3" class="firework3">
+        <img src="img/fireworks.png" alt="Firework 4" class="firework4">
+        <img src="img/fireworks.png" alt="Firework 5" class="firework5">
+    </div>
+
+    <!-- Washington Monument -->
+    <div class="monument">
+        <img src="img/washington-monument.png" alt="Washington Monument">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Happy 4th of July! 🎆🇺🇸</p>
+    </footer>
+
+    <script>
+    const audio = document.getElementById('bgm');
+
+    function playMusic() {
+      audio.muted = false;
+      audio.play();
+    }
+
+    function pauseMusic() {
+      audio.pause();
+    }
+    document.addEventListener('click', function () {
+      audio.muted = false;
+      audio.play();
+    }, { once: true });
+  </script>
 </body>
 </html>
