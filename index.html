@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4th of July Celebration</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+   
+   
+    <title>CSS Coding Challenge #1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <audio id="bgm" autoplay loop muted>
-        <source src="Music.mp3" type="audio/mpeg">
-    </audio>
-    <div class="music-controls">
-        <button onclick="playMusic()">--------</button>
-    </div>
-    <!-- Sky and Background -->
-    <div class="sky">
-        <div class="stars"></div>
-        <div class="moon">
-            <img src="img/moon.png" alt="Moon">
-        </div>
-    </div>
+    <h1>CSS Coding Challenge #1</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Team Member Names</th>
+                <th></th>
 
-    <!-- Fireworks -->
-    <div class="fireworks-container">
-        <img src="img/fireworks.png" alt="Firework 1" class="firework1">
-        <img src="img/fireworks.png" alt="Firework 2" class="firework2">
-        <img src="img/fireworks.png" alt="Firework 3" class="firework3">
-        <img src="img/fireworks.png" alt="Firework 4" class="firework4">
-        <img src="img/fireworks.png" alt="Firework 5" class="firework5">
-    </div>
-
-    <!-- Washington Monument -->
-    <div class="monument">
-        <img src="img/washington-monument.png" alt="Washington Monument">
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>Happy 4th of July! 🎆🇺🇸</p>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Team Member: John Vu </td>
+<td></td>
+             
+            </tr>
+            <tr>
+                <td>Team Member: Kirtan Patel </td>
+<td>&nbsp;</td>
+               
+            </tr>
+                        <tr>
+                <td>Team Member: Harshith Boopathy </td>
+<td>&nbsp;</td>
+               
+            </tr>
+            <tr>
+                <td>GitHub URL: <a href="https://github.com/johntmvu/web_4th_of_july">https://github.com/johntmvu/web_4th_of_july</a> </td>
+<td>&nbsp;</td>
+                
+            </tr>
+        </tbody>
+    </table>
+ <footer>
+ <!-- Place your URL here -->
+        <a href="demonstration.html">Here is my demonstration</a>
     </footer>
 
-    <script>
-    const audio = document.getElementById('bgm');
-
-    function playMusic() {
-      audio.muted = false;
-      audio.play();
-    }
-
-    function pauseMusic() {
-      audio.pause();
-    }
-    document.addEventListener('click', function () {
-      audio.muted = false;
-      audio.play();
-    }, { once: true });
-  </script>
 </body>
 </html>
