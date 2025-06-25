@@ -74,7 +74,7 @@ body {
 /* ===== WASHINGTON MONUMENT ===== */
 .monument img {
     position: absolute;
-    bottom: 4%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
